@@ -3,8 +3,16 @@ html{
     font-size: 5px;
 }
 
+/* header */
+
 header nav{
     padding: 2rem;
     height: 12rem;
     flex-direction: column;
 }
+
+/* about */
+
+#about .about {
+    flex-direction: column;
+  }

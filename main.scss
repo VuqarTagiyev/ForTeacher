@@ -1,46 +1,4 @@
-/* fonts */
 
-
-/* mani */
-:root
-{
-    --color1: #40CAD7;
-    --color2: #F4F2ED;
-    --color3: black;
-}
-
-*
-{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-html
-{
-    font-size: 10px;
-    font-family: 'Open Sans', sans-serif;
-    scroll-behavior: smooth;
-}
-
-a
-{
-    color: white;
-    text-decoration: none;
-}
-
-ul
-{
-    list-style: none;
-}
-
-body{
-    background: var(--color2);
-    background-image: url(img/background.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 /* header */
 
 header
@@ -125,7 +83,7 @@ header
         position: absolute;
         top: 0;
         left: 0;
-        opacity: .7;
+        opacity: .9;
     }
     .about
     {
@@ -133,7 +91,7 @@ header
         z-index: 2;
         width: 100%;
         text-align:center;
-        font-size: 4rem;
+        font-size: 3.5rem;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -141,10 +99,10 @@ header
 
         h1
         {
-            font-family: 'Rubik Mono One', sans-serif;
-            letter-spacing: -.5rem;
-            word-spacing: -3rem;
+            font-family: 'Alfa Slab One', cursive;
             transition: .5s;
+            text-transform: uppercase;
+            color: var(--color2)
         }
         h2
         {
@@ -157,8 +115,84 @@ header
 
 /* about */
 
-#about{
+#about
+{
     width: 100%;
-    height: 100rem;
     background: var(--color2);
+    padding: 10rem 0;
+
+    .about
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        .about-video ,
+        .about-content
+        {
+            padding: 2rem;
+            flex-grow: 1;
+            width: 100%;
+        }
+        .about-video
+        {
+            iframe
+            {
+                width: 100%;
+                height: 35rem;
+            }
+        }
+        .about-content
+        {
+            font-size: 1.8rem;
+            line-height: 3rem;
+            padding: 4rem;
+            a
+            {
+                color: skyblue;
+            }
+        }
+    }
+}
+
+
+/* thoughts */
+
+.thoughts
+{
+    width: 100%;
+    padding: 10rem;
+    background: var(--color1);
+    .container
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color3);
+        img
+        {
+            width: 15rem;
+            padding: .2rem;
+            margin-right: 2rem;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background: white;
+            -webkit-box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.75);
+        }
+        h3
+        {
+            font-size: 3rem;
+            padding-bottom: 2rem;
+        }
+        q
+        {
+            font-size: 2rem;
+            font-style: italic;
+            opacity: .8;
+            font-weight: 100;
+            letter-spacing: .1rem;
+        }
+    }
 }
