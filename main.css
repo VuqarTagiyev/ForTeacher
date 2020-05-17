@@ -58,6 +58,7 @@ header nav .logo {
   padding: 0 4rem;
   text-align: center;
   color: var(--color1);
+  transition: 0.5s;
 }
 header nav .logo h3 {
   font-family: "Mouse Memoirs", sans-serif;
@@ -81,6 +82,13 @@ header nav ul a {
   color: var(--color2);
   font-size: 2.5rem;
   font-weight: bold;
+  transition: 0.5s;
+}
+header nav ul a:hover {
+  transition: 0.5s;
+  transform: scale(1.2);
+  color: var(--color1);
+  border-bottom: 0.5rem solid var(--color1);
 }
 
 /* home */
@@ -114,10 +122,12 @@ header nav ul a {
   font-family: "Rubik Mono One", sans-serif;
   letter-spacing: -0.5rem;
   word-spacing: -3rem;
+  transition: 0.5s;
 }
 #home .about h2 {
   margin: -0.5rem 0;
   font-size: 3rem;
+  transition: 0.5s;
 }
 
 /* about */
