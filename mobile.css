@@ -1,6 +1,6 @@
 
 html{
-    font-size: 5px;
+    font-size: 6px;
 }
 
 /* header */
@@ -10,9 +10,21 @@ header nav{
     height: 14rem;
     flex-direction: column;
 }
+/* home */
+#home .home-bg{
+    background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,1) 100%);
+}
 
 /* about */
 
 #about .about {
     flex-direction: column;
+  }
+
+  /* language */
+
+  .language-item img
+  {
+      width: 10rem;
+      height: 10rem;
   }
