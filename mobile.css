@@ -1,0 +1,10 @@
+
+html{
+    font-size: 5px;
+}
+
+header nav{
+    padding: 2rem;
+    height: 12rem;
+    flex-direction: column;
+}
