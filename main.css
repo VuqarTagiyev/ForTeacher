@@ -5,17 +5,21 @@ header {
   width: 100%;
 }
 header nav {
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--color2);
   top: 0;
   position: fixed;
   z-index: 10000;
   width: 100%;
+  overflow: hidden;
   height: 8rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 5rem 2rem;
+  padding: 0 2rem;
+  -webkit-box-shadow: 0px -30px 12px 43px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0px -30px 12px 43px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px -30px 12px 43px rgba(0, 0, 0, 0.14);
 }
 header nav .logo {
   padding: 0 4rem;
@@ -25,11 +29,11 @@ header nav .logo {
 }
 header nav .logo h3 {
   font-family: "Mouse Memoirs", sans-serif;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: currentColor;
 }
 header nav .logo h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-style: italic;
   margin-top: -1rem;
   font-weight: 300;
@@ -38,18 +42,23 @@ header nav .logo h2 {
 }
 header nav ul {
   display: flex;
+  align-items: center;
   font-size: 2.2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
 }
 header nav ul a {
-  padding: 3rem;
-  color: var(--color2);
-  font-size: 2.5rem;
+  padding: 2rem;
+  color: var(--color3);
+  font-size: 2.2rem;
+  letter-spacing: -1.5px;
   font-weight: bold;
-  transition: 0.5s;
+  transition: 0.1s;
+  text-transform: uppercase;
+  text-decoration: none !important;
 }
 header nav ul a:hover {
-  transition: 0.5s;
-  transform: scale(1.2);
+  transition: 0.1s;
   color: var(--color1);
   border-bottom: 0.5rem solid var(--color1);
 }
@@ -68,28 +77,31 @@ header nav ul a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.9;
+  opacity: 1;
 }
 #home .about {
   color: var(--color2);
   z-index: 2;
   width: 100%;
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 3rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 #home .about h1 {
-  font-family: "Alfa Slab One", cursive;
+  font-family: "Black Ops One", cursive;
   transition: 0.5s;
+  font-weight: 100;
+  letter-spacing: 0.5rem;
+  font-size: 5rem;
   text-transform: uppercase;
   color: var(--color2);
 }
 #home .about h2 {
-  margin: -0.5rem 0;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.8rem;
   transition: 0.5s;
 }
 
@@ -134,7 +146,7 @@ header nav ul a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--color3);
+  color: var(--color2);
 }
 .thoughts .container img {
   width: 15rem;
@@ -155,8 +167,62 @@ header nav ul a:hover {
   font-size: 2rem;
   font-style: italic;
   opacity: 0.8;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 0.1rem;
+}
+
+/* photos */
+#photos {
+  background: var(--color2);
+  padding: 10rem 0;
+}
+#photos img {
+  transition: 0.5s;
+}
+
+/* scientific-activity */
+#scientific-activity {
+  background: var(--color2);
+  padding: 10rem 0;
+}
+#scientific-activity .scientific-activity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#scientific-activity .scientific-activity .activity-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+#scientific-activity .scientific-activity .activity-item div {
+  padding: 1rem;
+  font-size: 2rem;
+}
+#scientific-activity .scientific-activity .activity-item .activity-date {
+  flex-shrink: 0;
+  width: 12rem;
+  text-align: center;
+}
+#scientific-activity .scientific-activity .activity-item .activity-content {
+  border-left: 0.5rem solid var(--color1);
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  background: var(--color3);
+  color: var(--color2);
+}
+footer p {
+  margin: 0;
+  padding: 0 0.5rem;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
