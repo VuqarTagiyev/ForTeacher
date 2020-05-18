@@ -10,6 +10,12 @@ header nav{
     height: 14rem;
     flex-direction: column;
 }
+header nav ul li a{
+    padding: 0 1rem;
+    font-size: 2;
+}
+
+
 /* home */
 #home .home-bg{
     background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,1) 100%);
@@ -23,8 +29,22 @@ header nav{
 
   /* language */
 
-  .language-item img
+  #know-language .know-language .language-item img
   {
       width: 10rem;
       height: 10rem;
+      padding: .4rem;
+  }
+
+/* 
+  .thoughts */
+
+  .thoughts .container{
+      flex-direction: column;
+  }
+
+  /* action */
+
+  #action .action .action-item p{
+      font-size: 1.5rem;
   }
